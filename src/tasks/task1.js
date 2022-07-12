@@ -1,4 +1,4 @@
-const { Transform } = require('stream')
+import { Transform } from 'stream'
 
 const customTransform = new Transform({
     transform(data, encoding, callback) {

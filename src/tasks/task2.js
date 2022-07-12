@@ -1,6 +1,10 @@
-const csv = require("csvtojson")
-const fs = require("fs")
-const path = require("path")
+import csv from 'csvtojson'
+import * as fs from 'fs'
+import * as path from 'path'
+import { fileURLToPath } from 'url'
+
+const __filename = fileURLToPath(import.meta.url)
+const __dirname = path.dirname(__filename)
 
 const csvFilePath = path.join(__dirname, "../", "csv", "nodejs-hw1-ex1.csv")
 const textFilePath = path.join(__dirname, "../", "text", "nodejs-hw1-ex2.txt")

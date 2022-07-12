@@ -2,9 +2,14 @@
   "name": "nodejs-st2022",
   "version": "1.0.0",
   "description": "",
+  "type": "module",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "task1": "npx nodemon --exec babel-node src/tasks/task1.js",
+    "task2": "npx nodemon --exec babel-node src/tasks/task2.js",
+    "task1:prod": "npx babel-node src/tasks/task1.js",
+    "task2:prod": "npx babel-node src/tasks/task2.js"
   },
   "repository": {
     "type": "git",
@@ -18,9 +23,13 @@
   },
   "homepage": "https://github.com/anticher/NodeJS-ST2022#readme",
   "devDependencies": {
+    "@babel/cli": "^7.18.6",
+    "@babel/core": "^7.18.6",
+    "@babel/preset-env": "^7.18.6",
     "nodemon": "^2.0.19"
   },
   "dependencies": {
+    "@babel/node": "^7.18.6",
     "csvtojson": "^2.0.10"
   }
 }
