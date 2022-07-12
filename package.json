@@ -7,9 +7,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "task1": "npx nodemon --exec babel-node src/tasks/task1.js",
-    "task2": "npx nodemon --exec babel-node src/tasks/task2.js",
-    "task1:prod": "npx babel-node src/tasks/task1.js",
-    "task2:prod": "npx babel-node src/tasks/task2.js"
+    "task2": "npx nodemon --exec babel-node src/tasks/task2.js"
   },
   "repository": {
     "type": "git",
