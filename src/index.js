@@ -1,4 +1,5 @@
 const { Transform } = require('stream')
+const { EOL } = require('os')
 
 const customTransform = new Transform({
     transform(data, encoding, callback) {
@@ -8,7 +9,7 @@ const customTransform = new Transform({
             .reverse()
             .join('')
             .trim()
-        callback(null, resultString + '\n')
+        callback(null, resultString + EOL)
     }
 })
 
