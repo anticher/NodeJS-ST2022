@@ -25,18 +25,7 @@ readStream
       headers: ["book", "author", "amount", "price"],
       colParser: {
         amount: "omit",
-        price: function (item) {
-          const values = item.split(",")
-          const major = parseFloat(values[0])
-          const minor = parseFloat(values[1])
-          let minorLength = minor.toString().length
-          let divider = 1
-          while (minorLength > 0) {
-            divider *= 10
-            minorLength -= 1
-          }
-          return major + minor / divider
-        },
+        price: item => Number(item.replace(',', '.')),
       },
       checkType: true,
     })
