@@ -19,5 +19,8 @@
   "homepage": "https://github.com/anticher/NodeJS-ST2022#readme",
   "devDependencies": {
     "nodemon": "^2.0.19"
+  },
+  "dependencies": {
+    "csvtojson": "^2.0.10"
   }
 }
